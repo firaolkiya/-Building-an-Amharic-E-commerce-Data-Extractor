@@ -5,6 +5,7 @@ charset-normalizer==3.4.2
 colorama==0.4.6
 csvw==3.5.1
 dlinfo==2.0.0
+dotenv==0.9.9
 filelock==3.18.0
 fsspec==2025.7.0
 hf-xet==1.1.5
@@ -19,8 +20,11 @@ numpy==2.3.1
 packaging==25.0
 pandas==2.3.1
 phonemizer==3.3.0
+pyaes==1.6.1
+pyasn1==0.6.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
+python-dotenv==1.1.1
 pytz==2025.2
 PyYAML==6.0.2
 rdflib==7.1.4
@@ -29,10 +33,12 @@ regex==2024.11.6
 requests==2.32.4
 rfc3986==1.5.0
 rpds-py==0.26.0
+rsa==4.9.1
 safetensors==0.5.3
 segments==2.3.0
 six==1.17.0
 telephone==0.0.5
+Telethon==1.40.0
 tokenizers==0.21.2
 tqdm==4.67.1
 transformers==4.53.3
