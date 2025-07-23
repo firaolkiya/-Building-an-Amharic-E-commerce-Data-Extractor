@@ -11,9 +11,10 @@ phone = os.getenv('phone')
 
 # Function to scrape data from a single channel
 async def scrape_channel(client, channel_username, writer, media_dir):
+    print(f"Scraping channel: {channel_username}")
     entity = await client.get_entity(channel_username)
     channel_title = entity.title  # Extract the channel's title
-    async for message in client.iter_messages(entity, limit=10000):
+    async for message in client.iter_messages(entity, limit=5000):
         media_path = None
         if message.media and hasattr(message.media, 'photo'):
             # Create a unique filename for the photo
@@ -36,15 +37,13 @@ async def main():
     os.makedirs(media_dir, exist_ok=True)
 
     # Open the CSV file and prepare the writer
-    with open('telegram_data.csv', 'w', newline='', encoding='utf-8') as file:
+    with open('data/telegram_data.csv', 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(['Channel Title', 'Channel Username', 'ID', 'Message', 'Date', 'Media Path'])  # Include channel title in the header
         
         # List of channels to scrape
         channels = [
-            '@Shageronlinestore',  # Existing channel
-                 # You can add more channels here
-            
+            '@Shageronlinestore', 
         ]
         
         # Iterate over channels and scrape data into the single CSV file
