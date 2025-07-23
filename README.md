@@ -85,4 +85,12 @@ MIT License
 ---
 
 **Contact:**  
-For questions or support, please contact the project maintainer.
+For questions or support, please contact me.
+Email
+```bash
+firaolkiya6@gmail.com
+```
+Phone number
+```bash
++251936195307
+```
