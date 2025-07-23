@@ -86,7 +86,7 @@ MIT License
 
 **Contact:**  
 For questions or support, please contact me.
-###Author: Firaol Bulo
+### Author: Firaol Bulo
 Email
 ```bash
 firaolkiya6@gmail.com
